@@ -26,7 +26,14 @@
     "url": "https://app.tryleap.ai"
   },
   "tabs": [],
-  "anchors": [],
+    "anchors": [
+    {
+        "name": "API Reference",
+        "openapi": "https://api.workflows.tryleap.ai/api-json",
+        "url": "api-reference",
+        "icon": "square-terminal"
+    }
+  ],
   "navigation": [
     {
       "group": "Get Started",
