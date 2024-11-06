@@ -31,7 +31,7 @@
         "name": "Docs",
         "url": "introduction",
         "icon": "book-open"
-    }
+    },
     {
         "name": "API Reference",
         "openapi": "https://api.workflows.tryleap.ai/api-json",
