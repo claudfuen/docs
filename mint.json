@@ -29,18 +29,18 @@
   "topAnchor": {
     "name": "Home",
     "icon": "building"
-},
+  },
   "anchors": [
     {
-        "name": "Documentation",
-        "url": "/introduction",
-        "icon": "book-open"
+      "name": "Documentation",
+      "url": "introduction",
+      "icon": "book"
     },
     {
-        "name": "API Reference",
-        "openapi": "https://api.workflows.tryleap.ai/api-json",
-        "url": "/api-reference",
-        "icon": "square-terminal"
+      "name": "API Reference",
+      "openapi": "https://api.workflows.tryleap.ai/api-json",
+      "url": "api-reference",
+      "icon": "square-terminal"
     }
   ],
   "navigation": [
