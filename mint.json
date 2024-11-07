@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Leap AI Docs",
+  "name": "Leap AI",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -26,22 +26,33 @@
     "url": "https://app.tryleap.ai"
   },
   "tabs": [],
-  "topAnchor": {
-    "name": "Home",
-    "icon": "building"
+  "api": {
+    "baseUrl": "https://api.elevenlabs.io",
+    "playground": {
+      "mode": "show"
+    }
   },
+  "openapi": "https://api.workflows.tryleap.ai/api-json",
   "anchors": [
     {
+      "name": "Home",
+      "icon": "house",
+      "url": "/"
+    },
+    {
       "name": "API Reference",
-      "openapi": "https://api.workflows.tryleap.ai/api-json",
-      "url": "api-reference",
-      "icon": "square-terminal"
+      "icon": "rectangle-terminal",
+      "url": "api-reference"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction"]
+      "group": "Overview",
+      "pages": ["introduction", "api-reference/getting-started"]
+    },
+    {
+      "group": "Endpoints",
+      "pages": ["api-reference/run-workflow", "api-reference/get-workflow-run"]
     }
   ],
   "footerSocials": {

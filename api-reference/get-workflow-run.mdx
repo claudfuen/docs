@@ -1,0 +1,7 @@
+---
+openapi: get /v2/runs/{workflow_run_id}
+---
+
+This endpoint enables you to retrieve the status of a workflow run, and the output of the workflow.
+
+A common pattern is to run a workflow, and then check on its status and output by polling this endpoint every few seconds until the workflow run is complete.

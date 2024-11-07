@@ -1,0 +1,7 @@
+---
+openapi: post /v2/runs
+---
+
+This endpoint enables you to run a workflow, it however does not wait for the workflow to complete, and instead returns immediately with a workflow run `id`.
+
+You can then use the [Get Workflow Run](/api-reference/get-workflow-run) endpoint to check on the status of the workflow run, and retrieve the output of the workflow.

@@ -1,0 +1,53 @@
+### Get Your API Key
+
+To use the Leap Workflows API, you'll need an API key. You can get one by signing up for a free account at [app.tryleap.ai](https://app.tryleap.ai).
+
+<Frame>
+  <iframe
+    src="https://www.loom.com/embed/4a674d8e0b3b47289c5be8877cb7c600?sid=66155cf3-8b28-4abf-a683-9b6dd771ede8"
+    style={{ width: "100%", height: "100%", minHeight: "400px" }}
+  ></iframe>
+</Frame>
+
+### Running a Workflow via the API
+
+Before you can run a workflow via the API, you'll need to publish it first:
+
+1. Create and test your workflow in the [Leap Workflows Builder](https://app.tryleap.ai/workflows)
+2. Click the "Publish" button in the top right corner
+3. Your workflow is now ready to be called via the API
+
+After publishing your workflow you'll need to retrieve the `workflow_id` and the `trigger_id` you want to use.
+
+Here's a quick example of how you can publish and retrieve these values:
+
+<Frame>
+  <iframe
+    src="https://www.loom.com/embed/4d2bf3b24fe9498fb3dd4f442abfdf87?sid=ce3f96f0-6116-4e00-861c-1f07c000b398"
+    style={{ width: "100%", height: "100%", minHeight: "400px" }}
+  ></iframe>
+</Frame>
+
+### API Endpoints
+
+Get started with these key endpoints:
+
+- [Run Workflow](/api-reference/run-workflow) - Execute a published workflow
+- [Get Workflow Run](/api-reference/get-workflow-run) - Check the status and results of a workflow run
+
+### Understanding the API Flow
+
+When running a workflow through the API, it follows an asynchronous pattern:
+
+1. First, you call the [Run Workflow](/api-reference/run-workflow) endpoint which immediately returns a workflow run `id`. The workflow execution happens asynchronously in the background.
+
+2. Then, you use the [Get Workflow Run](/api-reference/get-workflow-run) endpoint using the `id` returned from the Run Workflow endpoint to check on the status and retrieve the results. A common pattern is to poll this endpoint every few seconds until the workflow run is complete.
+
+Here's a typical flow:
+
+1. Call `/v2/runs` with your workflow configuration
+2. Receive a workflow run `id` immediately
+3. Poll `/v2/runs/{workflow_run_id}` periodically to check status and get results
+4. Once the status indicates completion, retrieve your workflow output
+
+This asynchronous approach allows you to handle long-running workflows efficiently without keeping connections open for extended periods.
