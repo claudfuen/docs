@@ -32,8 +32,8 @@
   },
   "anchors": [
     {
-      "name": "Other Api",
-      "url": "introduction",
+      "name": "Home",
+      "url": "",
       "icon": "square-terminal"
     },
     {
