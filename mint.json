@@ -51,7 +51,7 @@
     },
     {
       "group": "Product",
-      "pages": ["product/triggers"]
+      "pages": ["product/actions", "product/integrations", "product/triggers"]
     },
     {
       "group": "Endpoints",
