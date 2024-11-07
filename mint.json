@@ -26,6 +26,10 @@
     "url": "https://app.tryleap.ai"
   },
   "tabs": [],
+  "topAnchor": {
+    "name": "Home",
+    "icon": "building"
+},
   "anchors": [
     {
         "name": "Documentation",
