@@ -7,12 +7,12 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#14B8A6",
+    "light": "#2DD4BF",
+    "dark": "#14B8A6",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#14B8A6",
+      "to": "#2DD4BF"
     }
   },
   "topbarLinks": [
@@ -26,12 +26,6 @@
     "url": "https://app.tryleap.ai"
   },
   "tabs": [],
-  "api": {
-    "baseUrl": "https://api.elevenlabs.io",
-    "playground": {
-      "mode": "show"
-    }
-  },
   "openapi": "https://api.workflows.tryleap.ai/api-json",
   "anchors": [
     {

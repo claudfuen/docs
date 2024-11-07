@@ -2,6 +2,10 @@
 openapi: get /v2/runs/{workflow_run_id}
 ---
 
-This endpoint enables you to retrieve the status of a workflow run, and the output of the workflow.
+This endpoint retrieves both the current status and output data of a workflow run. The status indicates whether the workflow is still running, has completed successfully, or encountered an error.
 
-A common pattern is to run a workflow, and then check on its status and output by polling this endpoint every few seconds until the workflow run is complete.
+To monitor a workflow's progress, the recommended pattern is to:
+
+1. Call this endpoint periodically (e.g., every 3-5 seconds)
+2. Check the status field in the response
+3. Once status shows "completed", retrieve the workflow output from the response data
