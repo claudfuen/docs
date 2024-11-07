@@ -49,6 +49,10 @@
       ]
     },
     {
+      "group": "Product",
+      "pages": ["product/triggers"]
+    },
+    {
       "group": "Endpoints",
       "pages": ["api-reference/run-workflow", "api-reference/get-workflow-run"]
     }

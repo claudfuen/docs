@@ -1,0 +1,75 @@
+---
+title: "Triggers"
+description: "Learn how to use triggers to automatically run workflows"
+---
+
+Triggers are the first step in building a workflow. They determine when and how your workflow should run.
+
+Think of triggers as the "when" of your workflow - they define the conditions or events that will cause your workflow to execute.
+
+When building a workflow in the Workflows Builder, selecting a trigger is always the first step. The trigger you choose will determine what data is available to subsequent steps in your workflow and how the workflow can be initiated.
+
+## Creating a Trigger
+
+To create a trigger, click the "Add Trigger" button in the top right corner of the Workflows Builder and select the type of trigger you want to create.
+
+<Frame>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full"
+    src="https://storage.cloud.google.com/leap-docs/triggers.mp4"
+  ></video>
+</Frame>
+
+## Trigger Types
+
+### Manual / API Triggers
+
+Manual triggers allow you to run workflows on-demand through:
+
+- The Leap Workflows UI dashboard
+- Direct API calls using the [Run Workflow](/api-reference/run-workflow) endpoint
+
+This is ideal for:
+
+- Testing and development
+- One-off workflow executions
+- Integration into your own applications
+
+### Schedule Triggers
+
+Schedule triggers let you run workflows automatically at specified intervals using cron expressions. For example:
+
+- Every hour: `0 * * * *`
+- Daily at midnight: `0 0 * * *`
+- Every Monday at 9am: `0 9 * * 1`
+
+This is perfect for:
+
+- Regular batch processing
+- Periodic data updates
+- Automated reporting
+- Scheduled maintenance tasks
+
+If you're not familiar with cron expressions, you can use the [Cronify](https://cronify.zimo.li/) tool to help. It converts natural language (like "every Monday at 9am") into the correct cron expression format.
+
+### Event-Based Triggers
+
+Event triggers automatically run workflows in response to external events from integrated platforms:
+
+#### Supported Events
+
+- **Slack**
+  - New message in channel
+- **GitHub**
+  - Pull request comments
+
+Event triggers are ideal for:
+
+- Real-time processing
+- Automated responses
+- Integration with external services
+- Building interactive applications
