@@ -26,9 +26,9 @@
     "url": "https://app.tryleap.ai"
   },
   "tabs": [],
-    "anchors": [
+  "anchors": [
     {
-        "name": "Docs",
+        "name": "Documentation",
         "url": "introduction",
         "icon": "book-open"
     },
