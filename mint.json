@@ -32,11 +32,6 @@
   },
   "anchors": [
     {
-      "name": "Home",
-      "url": "",
-      "icon": "square-terminal"
-    },
-    {
       "name": "API Reference",
       "openapi": "https://api.workflows.tryleap.ai/api-json",
       "url": "api-reference",
