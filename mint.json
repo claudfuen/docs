@@ -44,6 +44,7 @@
       "group": "Overview",
       "pages": [
         "introduction",
+        "faqs",
         "api-reference/getting-started",
         "api-reference/webhooks"
       ]
