@@ -42,7 +42,11 @@
   "navigation": [
     {
       "group": "Overview",
-      "pages": ["introduction", "api-reference/getting-started"]
+      "pages": [
+        "introduction",
+        "api-reference/getting-started",
+        "api-reference/webhooks"
+      ]
     },
     {
       "group": "Endpoints",
