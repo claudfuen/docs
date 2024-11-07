@@ -33,7 +33,7 @@
   "anchors": [
     {
       "name": "Other Api",
-      "url": "api-reference",
+      "url": "introduction",
       "icon": "square-terminal"
     },
     {
