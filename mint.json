@@ -32,9 +32,9 @@
   },
   "anchors": [
     {
-      "name": "Documentation",
-      "url": "introduction",
-      "icon": "book"
+      "name": "Other Api",
+      "url": "api-reference",
+      "icon": "square-terminal"
     },
     {
       "name": "API Reference",
