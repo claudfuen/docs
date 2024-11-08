@@ -41,7 +41,7 @@
   ],
   "navigation": [
     {
-      "group": "Overview",
+      "group": "",
       "pages": [
         "introduction",
         "faqs",
@@ -51,7 +51,12 @@
     },
     {
       "group": "Product",
-      "pages": ["product/actions", "product/integrations", "product/triggers"]
+      "pages": [
+        "product/getting-started",
+        "product/actions",
+        "product/triggers",
+        "product/integrations"
+      ]
     },
     {
       "group": "Endpoints",
