@@ -9,3 +9,44 @@ description: "This example showcases how a customer uses Leap to automate tweets
     style={{ width: "100%", height: "100%", minHeight: "400px" }}
   ></iframe>
 </Frame>
+
+## Overview
+
+This example demonstrates how a customer, Thirdweb, uses Leap to automate their weekly changelog updates across multiple marketing channels. The workflow automatically processes their changelog entries from the past 7 days and generates:
+
+- Email newsletters
+- Twitter thread drafts
+- Blog post summaries
+
+## How It Works
+
+The workflow can be triggered either manually or on a scheduled basis every 7 days. Here's the step-by-step process:
+
+1. **Content Scraping**: The workflow visits Thirdweb's changelog page and scrapes all recent content
+2. **Date Detection**: Using LLMs, it identifies posts from the last 7 days
+3. **Content Processing**: For each recent post, it extracts and processes the content
+4. **Multi-Channel Distribution**: Automatically generates and distributes content to:
+   - Email newsletters with feature summaries
+   - Twitter thread drafts highlighting key updates
+   - Blog post summaries published via Ghost integration
+
+## Key Benefits
+
+- **Time Savings**: Automates previously manual content distribution tasks
+- **Consistency**: Ensures regular communication of product updates
+- **Multi-Channel Presence**: Maintains active presence across different platforms
+- **Scalability**: Part of a larger automation strategy (one of 30+ workflows)
+
+## Implementation Details
+
+The workflow uses several key Leap features:
+
+- **Scheduling**: Automated runs every 7 days
+- **Web Scraping**: Extracts changelog content
+- **AI Processing**: LLM-powered content analysis and generation
+- **Multi-Platform Integration**: Connects with email, Twitter, and Ghost
+
+<Note>
+  This workflow can be customized for different content sources, update
+  frequencies, and distribution channels based on your specific needs.
+</Note>
