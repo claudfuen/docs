@@ -37,14 +37,20 @@
       "name": "API Reference",
       "icon": "rectangle-terminal",
       "url": "api-reference"
+    },
+    {
+      "name": "Changelog",
+      "icon": "list-check",
+      "url": "changelog"
     }
   ],
   "navigation": [
     {
-      "group": "",
+      "group": "Overview",
       "pages": [
         "introduction",
         "faqs",
+        "changelog/product-updates",
         "api-reference/getting-started",
         "api-reference/webhooks"
       ]
@@ -55,6 +61,8 @@
         "product/getting-started",
         "product/actions",
         "product/triggers",
+        "product/conditionals",
+        "product/loops",
         "product/integrations"
       ]
     },
