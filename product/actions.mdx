@@ -1,0 +1,107 @@
+---
+title: "Actions"
+description: "Learn how to use actions to perform tasks in your workflow"
+---
+
+Actions are the building blocks of your workflow. They define what tasks your workflow will perform when triggered.
+
+Think of actions as the "what" of your workflow - they define the specific operations and tasks that will be executed in sequence.
+
+When building a workflow in the Workflows Builder, actions are added after selecting a trigger. The actions you choose will determine what your workflow actually does with the data it receives.
+
+## Adding Actions
+
+To add an action, click the "Add Action" button in the workflow builder and select from the available action types.
+
+<Frame>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full"
+    src="https://storage.cloud.google.com/leap-docs/triggers.mp4"
+  ></video>
+</Frame>
+
+## Action Types
+
+### Available Actions
+
+Leap provides a wide range of integrations with popular services through pre-built actions. Here are some examples of what you can do:
+
+#### Communication
+
+- Send messages to Slack channels or users
+- Post notifications and updates
+
+#### AI and Machine Learning
+
+- Generate text with Anthropic's Claude
+- Create images using Fal.ai's models
+- Generate content with OpenAI's GPT models
+
+#### Development Tools
+
+- Add comments to GitHub pull requests
+- Interact with repositories and issues
+
+These are just a few examples from our growing library of actions. We continuously add new integrations and capabilities to help you build more powerful workflows.
+
+### Third-Party Service Integration
+
+Leap Workflows integrates with third-party services through two authentication methods:
+
+#### OAuth Authentication
+
+For services like GitHub, Slack, and Google:
+
+1. Click "Connect Account"
+2. Log in to the service
+3. Authorize Leap's access
+
+OAuth provides secure access without sharing credentials.
+
+#### API Key Authentication
+
+For services requiring API keys:
+
+1. Generate a key from the service's developer portal
+2. Add it to the action configuration
+3. Leap securely stores and uses the key
+
+#### AI Service Cost Management
+
+When using AI services (OpenAI, Anthropic, etc.), providing your own API keys offers several benefits:
+
+- Direct billing from AI providers with no markup
+- Full control over spending and usage limits
+- Usage tracking through provider dashboards
+- Support for enterprise agreements and custom pricing
+
+This ensures transparent cost management for AI-powered workflows.
+
+## FAQs
+
+<AccordionGroup>
+    <Accordion title="Can I add multiple API keys for the same service?">
+    Yes, you can add multiple API keys per service for load balancing, project separation, and backup redundancy.
+    
+    Keys are stored securely and selectable when configuring workflow actions.
+    </Accordion>
+
+    <Accordion title="Can I test actions before running them in production?">
+    Yes! You can test actions by running your workflow draft in the editor. This allows you to verify the action's behavior before publishing to production.
+    </Accordion>
+
+    <Accordion title="What if I don't see the action or integration I need?">
+    If you need an action or integration that's not currently available:
+
+    1. Contact us at help@tryleap.ai
+    2. Describe the integration you need
+    3. We can typically add most integrations within 24 hours
+
+    We're constantly expanding our integration library and love hearing about new use cases from our users.
+    </Accordion>
+
+</AccordionGroup>
