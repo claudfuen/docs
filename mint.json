@@ -49,6 +49,7 @@
       "group": "Overview",
       "pages": [
         "introduction",
+        "product/getting-started",
         "faqs",
         "changelog/product-updates",
         "api-reference/getting-started",
@@ -56,14 +57,12 @@
       ]
     },
     {
-      "group": "Product",
+      "group": "Core Concepts",
       "pages": [
-        "product/getting-started",
         "product/actions",
         "product/triggers",
         "product/conditionals",
-        "product/loops",
-        "product/integrations"
+        "product/loops"
       ]
     },
     {
