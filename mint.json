@@ -62,7 +62,8 @@
         "product/actions",
         "product/triggers",
         "product/conditionals",
-        "product/loops"
+        "product/loops",
+        "product/variables"
       ]
     },
     {
