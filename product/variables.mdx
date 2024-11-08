@@ -3,4 +3,65 @@ title: "Variables"
 description: "Learn how to use variables to store and reuse data in your workflow"
 ---
 
-This documentation section is currently under development. Please check back soon for updates.
+Variables are one of the most important concepts in Leap Workflows. They allow you to reference and reuse data throughout your workflow, creating connections between different actions and triggers.
+
+## Understanding Variables
+
+Variables store data that comes from:
+
+- Trigger inputs
+- Output from previous actions
+
+Think of variables as containers that hold information which can be passed between different steps of your workflow.
+
+## Using Variables
+
+To use variables in your workflow:
+
+1. Click on an action to open its configuration panel
+2. Click on any input field where you want to use a variable
+3. Select from the list of available variables in the popup menu
+
+<Frame>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full"
+    src="https://storage.cloud.google.com/leap-docs/variables.mp4"
+  ></video>
+</Frame>
+
+## Variable Rules
+
+When working with variables, keep in mind:
+
+1. **Connection Required**: Steps must be connected in the workflow for their variables to be accessible
+2. **Order Matters**: You can only reference variables from steps that come before (upstream) in the workflow
+3. **Scope**: Variables are available to all downstream actions after they're created
+
+## Common Use Cases
+
+Variables are commonly used for:
+
+- Passing trigger data to actions
+- Using output from one action as input for another
+- Storing intermediate results
+- Creating dynamic content based on previous steps
+- Configuring conditional logic
+
+## Best Practices
+
+To effectively use variables:
+
+- Give your actions descriptive names for easier variable reference
+- Test variable connections before publishing workflows
+- Use the variable picker UI to ensure correct syntax
+- Verify variable data types match expected inputs
+
+<Info>
+  The variable picker will only show variables that are valid for the current
+  context. If you don't see an expected variable, check your workflow
+  connections and step order.
+</Info>

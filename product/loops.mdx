@@ -3,4 +3,73 @@ title: "Loops"
 description: "Learn how to use loops to repeat actions in your workflow"
 ---
 
-This documentation section is currently under development. Please check back soon for updates.
+Loops are a powerful feature in Leap Workflows that allow you to repeat a set of actions multiple times over a list of items. They act as containers for logic that needs to be executed repeatedly.
+
+## Adding a Loop
+
+To add a loop to your workflow:
+
+1. Open the Workflow Editor
+2. Click the "Actions" button in the bottom left corner
+3. Select "Loop" from the available actions
+4. Connect the loop node to other actions using the handle connectors
+
+<Frame>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full"
+    src="https://storage.cloud.google.com/leap-docs/loops.mp4"
+  ></video>
+</Frame>
+
+## Configuring a Loop
+
+Loops require two main configurations:
+
+1. **Actions Inside the Loop**: Add actions that should be repeated using the "Add Action" button within the loop container
+2. **Loop Items**: Define what to iterate over using one of these methods:
+
+### Loop Item Sources
+
+#### Manual List
+
+- Create a custom array of items directly in the UI
+- Example: List of search queries to process
+
+#### Variable Reference
+
+- Use an array returned by a previous action
+- Reference existing workflow data
+
+#### AI-Generated Lists
+
+- **AI Auto**: Automatically generate a list based on context
+- **AI Prompt**: Generate a list by providing specific prompts to the AI
+
+## Loop Settings
+
+### Max Iterations
+
+You can set a maximum number of iterations to prevent infinite loops or limit processing time. This is useful for:
+
+- Controlling workflow duration
+- Managing resource usage
+- Preventing unintended long-running processes
+
+## Use Cases
+
+Loops are ideal for:
+
+- Processing multiple items in a dataset
+- Performing batch operations
+- Running searches with multiple queries
+- Executing repeated API calls
+- Generating content variations
+
+<Info>
+  Actions inside a loop will execute once for each item in your configured list.
+  Make sure to properly configure max iterations to avoid unexpected behavior.
+</Info>
