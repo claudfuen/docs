@@ -66,6 +66,10 @@
       ]
     },
     {
+      "group": "Examples",
+      "pages": ["examples/changelog-automation"]
+    },
+    {
       "group": "Endpoints",
       "pages": ["api-reference/run-workflow", "api-reference/get-workflow-run"]
     }
