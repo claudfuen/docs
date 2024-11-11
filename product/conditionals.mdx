@@ -3,4 +3,58 @@ title: "Conditionals"
 description: "Learn how to use conditionals to control the flow of your workflow"
 ---
 
-This documentation section is currently under development. Please check back soon for updates.
+Conditionals are powerful control structures in Leap Workflows that allow you to create branching logic based on specific conditions. They help you make your workflows smarter by executing different actions depending on the situation.
+
+## Adding a Conditional
+
+To add a conditional to your workflow:
+
+1. Open the Workflow Editor
+2. Click the "Actions" button in the bottom left corner
+3. Select "Conditional" from the available actions
+4. Connect the conditional node to other actions using the handle connectors
+
+<Frame>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full"
+    src="https://storage.cloud.google.com/leap-docs/triggers.mp4"
+  ></video>
+</Frame>
+
+## Configuring Conditionals
+
+Conditionals have two main components:
+
+1. **Condition Rule**: A plain English description of when the condition should be true
+2. **Paths**: Multiple possible execution paths:
+   - Conditional Path: Actions to execute when the condition is met
+   - Default Path: A fallback path when no conditions are met
+
+### Writing Condition Rules
+
+You can write conditions in natural language, such as:
+
+- "If the message contains the word 'help'"
+- "When the temperature is above 75 degrees"
+- "If the user's subscription is active"
+
+The AI will automatically interpret these rules based on the workflow context (data from the trigger, variables, and the results of previous actions.).
+
+## Use Cases
+
+Conditionals are ideal for:
+
+- Filtering trigger events
+- Creating different paths based on data values
+- Implementing approval flows
+- Handling error cases
+- Customizing responses based on input
+
+<Info>
+  Keep your condition rules clear and specific. The AI works best with
+  unambiguous conditions that can be evaluated to true or false.
+</Info>
