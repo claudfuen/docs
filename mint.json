@@ -75,6 +75,14 @@
       "pages": ["api-reference/run-workflow", "api-reference/get-workflow-run"]
     }
   ],
+  "analytics": {
+    "posthog": {
+      "apiKey": "phc_7TWmLqfPFKdYTF01wOoYay0qLkenh18leUwxeMFQfZ7"
+    },
+    "gtm": {
+      "tagId": "GTM-PWLVVZLF"
+    }
+  },
   "footerSocials": {
     "x": "https://x.com/leapai_",
     "github": "https://github.com/leap-ai/",
